@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+	<EditTextPreference
+		android:id="@+id/timeLimit"
+		android:numeric="integer"
+		android:maxLength="4"
+		android:key="timeLimit"
+		android:title="Pester limit"
+		android:summary="How long to pester, sec"
+		android:defaultValue="600"
+	/>
+</PreferenceScreen>
