@@ -173,7 +173,7 @@ public class stopit extends Activity implements View.OnClickListener {
     	if( SmsManager.getDefault() == null) {
 			new AlertDialog.Builder(this)
 			.setTitle("Stop It!")
-			.setMessage("We are sorry, but it appears that your device does not support SMS messaging. Please contact us at v.kin@comcast.net to request a refund.")
+			.setMessage("We are sorry, it appears that your device does not support SMS messaging.")
 			.setNeutralButton("Close", new DialogInterface.OnClickListener() {
 				
 				public void onClick(DialogInterface dialog, int which) {
@@ -288,7 +288,8 @@ public class stopit extends Activity implements View.OnClickListener {
     	return false;
     }
     
-    public void onClick(View view) {
+    @Override
+	public void onClick(View view) {
     	if( view == m_bStart) {
     		processStartButton();
     	} else if( view == m_bStop) {
@@ -548,7 +549,7 @@ public class stopit extends Activity implements View.OnClickListener {
                     	m_messageSent = false;
                         break;
                     case SmsManager.RESULT_ERROR_NULL_PDU:
-                        m_messageNotSentReason = "Internal error - no message fount (null PDU)";
+                        m_messageNotSentReason = "Internal error - no message sent (null PDU)";
                     	m_messageSent = false;
                         break;
                     case SmsManager.RESULT_ERROR_RADIO_OFF:
