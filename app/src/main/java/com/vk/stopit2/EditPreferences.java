@@ -1,6 +1,5 @@
-package com.vk.stopit;
+package com.vk.stopit2;
 
-import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.preference.PreferenceActivity;
 

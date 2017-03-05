@@ -1,4 +1,4 @@
-package com.vk.stopit;
+package com.vk.stopit2;
 
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
