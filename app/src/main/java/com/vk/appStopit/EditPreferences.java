@@ -1,4 +1,4 @@
-package com.vk.stopit2;
+package com.vk.appStopit;
 
 import android.os.Bundle;
 import android.preference.PreferenceActivity;
